@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #000;
+}
+/* Menu de Navegação */
+.navbar {
+  background: linear-gradient(0deg, black 0%, black 100%), #585757;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  color: white;
+  flex-wrap: wrap;
+}
+.nav-logo img { height: 60px; }
+.nav-links { display: flex; gap: 30px; flex-wrap: wrap; }
+.nav-links a { color: white; text-decoration: none; font-size: 1.2rem; }
+.nav-links a:hover { text-decoration: underline; }
+.nav-contact { display: flex; align-items: center; gap: 10px; font-size: 1.2rem; }
+.nav-contact img { width: 30px; height: 30px; }
+
+/* Seção Hero (Banner Principal) */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  background-image: url('https://placehold.co/3135x1230');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.hero h1 { 
+  font-family: 'Roboto'; font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 10px; 
+  color: #000; background: rgba(255,255,255,0.8); padding: 10px 20px; border-radius: 10px;
+}
+.hero p { 
+  font-size: clamp(1rem, 2.5vw, 1.5rem); font-weight: bold;
+  color: #000; background: rgba(255,255,255,0.8); padding: 10px 20px; border-radius: 10px;
+}
+
+/* Barra de Busca */
+.search-section {
+  background: #CACACA;
+  margin: -50px auto 40px;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 20px;
+  padding: 30px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+}
+.search-section h2 { text-align: center; font-size: 2rem; margin-top: 0; }
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+.search-item, .search-btn {
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid black;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.search-item {
+  background: white;
+  color: #333;
+}
+.search-item::placeholder {
+  color: #999;
+}
+.search-btn {
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.search-btn:hover {
+  background: #333;
+}
+
+/* Destaques e Layout de Cards */
+.highlights { text-align: center; padding: 40px 20px; }
+.highlights h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 40px; }
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+.card {
+  background: #838383;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.card img { width: 100%; height: auto; object-fit: cover; }
+.card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.card h3 { font-size: 2rem; margin: 0 0 10px; }
+.card p { font-size: 1.2rem; margin: 0 0 20px; font-weight: bold; }
+.card .price { font-size: 2.5rem; color: white; margin: 0; font-weight: bold; }
+.card .btn-detalhes {
+  background: white; color: black; text-align: center; padding: 15px; border-radius: 10px;
+  border: 3px solid black; font-weight: bold; text-decoration: none; margin-top: 15px; transition: background 0.3s;
+}
+.card .btn-detalhes:hover { background: #eee; }
+
+/* Chamada para Ação */
+.cta {
+  background: white; margin: 60px 5%; padding: 60px 20px; border-radius: 20px; border: 8px solid black; text-align: center;
+}
+.cta h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 20px; }
+.cta p { font-size: clamp(1.2rem, 2vw, 1.8rem); margin-bottom: 40px; font-weight: bold; }
+.cta-btn {
+  display: inline-block; background: #D9D9D9; padding: 20px 40px; border-radius: 50px;
+  border: 4px solid black; color: black; font-size: 1.5rem; font-weight: bold; text-decoration: none; letter-spacing: 2px; transition: background 0.3s;
+}
+.cta-btn:hover { background: #bcbcbc; }
+
+/* Layout do Inventário */
+.inventory-container { display: flex; flex-wrap: wrap; gap: 30px; padding: 40px 5%; max-width: 1400px; margin: 0 auto; }
+.sidebar {
+  background: #CCCCCC; padding: 30px; border-radius: 16px; border: 5px solid black; width: 100%; max-width: 300px; box-sizing: border-box;
+}
+.sidebar h2 { font-size: 2rem; margin-top: 0; border-bottom: 3px solid black; padding-bottom: 10px; }
+.filter-group { margin-bottom: 20px; }
+.filter-group h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.filter-group label { display: block; font-size: 1.2rem; margin-bottom: 5px; cursor: pointer; }
+.filter-group input { margin-right: 10px; }
+.inventory-grid { flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+
+/* Rodapé */
+.footer {
+  background: #585757; color: white; padding: 60px 5%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;
+}
+.footer-col { flex: 1; min-width: 250px; }
+.footer-col img.logo { max-width: 200px; margin-bottom: 20px; }
+.footer-links h4 { font-size: 2rem; margin-bottom: 20px; }
+.footer-links ul { list-style: none; padding: 0; }
+.footer-links li { margin-bottom: 10px; font-size: 1.2rem; font-weight: bold; }
+.footer-links a { color: white; text-decoration: none; }
+.footer-links a:hover { text-decoration: underline; }
+.footer-social h4 { font-size: 2rem; margin-bottom: 20px; }
+.social-icons { display: flex; gap: 15px; flex-wrap: wrap; }
+.social-icons img { width: 50px; height: 50px; }
+.copyright { width: 100%; text-align: left; margin-top: 40px; font-size: 1.2rem; font-weight: bold; }
+
+/* --- Layout da Página Sobre --- */
+.sobre-hero { width: 100%; }
+.sobre-hero img { width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover; }
+
+.sobre-text-section { display: flex; flex-wrap: wrap; gap: 40px; padding: 60px 5%; max-width: 1400px; margin: 0 auto; }
+.text-block { flex: 1; min-width: 300px; }
+.text-block h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; color: #333; }
+.text-block p { font-size: 1.2rem; line-height: 1.6; color: #444; }
+
+.sobre-values-section { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; padding: 60px 5%; background-color: #d5d5d5; }
+.value-item { text-align: center; flex: 1; min-width: 250px; max-width: 350px; }
+.value-item img { width: 100%; max-width: 250px; height: auto; border-radius: 20px; margin-bottom: 20px; border: 5px solid #585757; }
+.value-item h3 { font-size: 2rem; font-weight: 700; margin: 0; color: #222; }
+
+/* --- Layout da Página de Contato --- */
+.contato-hero { width: 100%; }
+.contato-hero img { width: 100%; height: auto; display: block; max-height: 500px; object-fit: cover; }
+
+.contato-content { text-align: center; padding: 60px 5%; max-width: 1200px; margin: 0 auto; }
+.contato-content h1 { font-size: clamp(2rem, 4vw, 3rem); font-family: 'Roboto', sans-serif; font-weight: 700; margin-bottom: 50px; }
+.contato-grid { display: flex; flex-wrap: wrap; gap: 60px; text-align: left; justify-content: space-between; }
+
+.contato-info { flex: 1; min-width: 300px; }
+.contato-info h2 { font-size: 2.5rem; margin-bottom: 30px; border-bottom: 3px solid #000; padding-bottom: 10px; }
+.info-item { margin-bottom: 25px; }
+.info-item h3 { font-size: 1.5rem; margin: 0 0 5px 0; color: #333; }
+.info-item p { font-size: 1.2rem; margin: 0; line-height: 1.5; color: #555; }
+.map-box { background: #838383; padding: 30px; border-radius: 14px; border: 5px solid black; display: inline-block; margin-top: 20px; }
+.contato-form { flex: 1; min-width: 300px; }
+.contato-form h2 { font-size: 2.5rem; margin-bottom: 30px; border-bottom: 3px solid #000; padding-bottom: 10px; }
+.contato-form form { display: flex; flex-direction: column; gap: 20px; }
+.contato-form input, .contato-form textarea { width: 100%; padding: 20px; border-radius: 10px; border: 5px solid black; font-size: 1.2rem; font-family: 'Inter', sans-serif; box-sizing: border-box; }
+.contato-form textarea { height: 180px; resize: vertical; }
+.contato-form button { background: #D8D6D6; color: black; padding: 20px; border-radius: 10px; border: 5px solid black; font-size: 1.5rem; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+.contato-form button:hover { background: #bcbcbc; }
+
+.filter-group input[type="range"] { width: 100%; height: 8px; border-radius: 5px; background: #838383; outline: none; cursor: pointer; -webkit-appearance: none; }
+.filter-group input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #000; cursor: pointer; border: 2px solid white; }
+.filter-group input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: #000; cursor: pointer; border: 2px solid white; }
+.filter-range { margin-bottom: 15px; }
+.filter-range label { font-size: 1rem; margin-bottom: 8px; }
