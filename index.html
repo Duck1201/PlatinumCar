@@ -1,151 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlatinumCar</title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PlatinumCar</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/js/main.js" defer></script>
+    </head>
+    <body>
+        <!-- Menu de Navegação -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="/images/logo.png" alt="Logo" />
+            </div>
+            <div class="nav-links">
+                <a href="#">Início</a>
+                <a href="html/inventario.html">Inventário</a>
+                <a href="html/sobre.html">Sobre</a>
+                <a href="html/contato.html">Contato</a>
+            </div>
+            <div class="nav-contact">
+                <span>Fale conosco</span>
+                <img src="https://placehold.co/106x106" alt="Icon" />
+            </div>
+        </nav>
 
-  <!-- Menu de Navegação -->
-  <nav class="navbar">
-    <div class="nav-logo">
-      <img src="https://placehold.co/433x297" alt="Logo">
-    </div>
-    <div class="nav-links">
-      <a href="/html/inicio.html">Início</a>
-      <a href="/html/inventario.html">Inventário</a>
-      <a href="/html/sobre.html">Sobre</a>
-      <a href="/html/contato.html">Contato</a>
-    </div>
-    <div class="nav-contact">
-      <span>Fale conosco</span>
-      <img src="https://placehold.co/106x106" alt="Icon">
-    </div>
-  </nav>
+        <!-- Hero Principal -->
+        <header class="hero">
+            <h1>ENCONTRE O SEU PROXIMO DESTINO SOBRE RODAS.</h1>
+            <p>MODELOS EXCLUSIVOS COM AS MELHORES CONDIÇÕES DO MERCADO</p>
+        </header>
 
-  <!-- Hero Principal -->
-  <header class="hero">
-    <h1>ENCONTRE O SEU PROXIMO DESTINO SOBRE RODAS.</h1>
-    <p>MODELOS EXCLUSIVOS COM AS MELHORES CONDIÇÕES DO MERCADO</p>
-  </header>
+        <!-- Barra de Busca -->
+        <section class="search-section">
+            <h2>BUSCA RAPIDA</h2>
+            <form class="search-form">
+                <div class="search-grid">
+                    <select class="search-item" id="marca" required>
+                        <option value="">MARCA</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="kia">Kia</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="vw">Volkswagen</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="chery">Chery</option>
+                    </select>
+                    <input type="text" class="search-item" id="modelo" placeholder="MODELO" />
+                    <input type="number" class="search-item" id="ano" placeholder="ANO" min="1990" max="2026" />
+                    <input type="number" class="search-item" id="preco" placeholder="PREÇO MÁXIMO" min="0" step="1000" />
+                    <button type="submit" class="search-btn">BUSCAR VEICULOS</button>
+                </div>
+            </form>
+        </section>
 
-  <!-- Barra de Busca -->
-  <section class="search-section">
-    <h2>BUSCA RAPIDA</h2>
-    <form class="search-form" onsubmit="buscarVeiculos(event)">
-      <div class="search-grid">
-        <select class="search-item" id="marca" required>
-          <option value="">MARCA</option>
-          <option value="fiat">Fiat</option>
-          <option value="hyundai">Hyundai</option>
-          <option value="mitsubishi">Mitsubishi</option>
-          <option value="kia">Kia</option>
-          <option value="toyota">Toyota</option>
-          <option value="vw">Volkswagen</option>
-          <option value="nissan">Nissan</option>
-          <option value="chery">Chery</option>
-        </select>
-        <input type="text" class="search-item" id="modelo" placeholder="MODELO" />
-        <input type="number" class="search-item" id="ano" placeholder="ANO" min="1990" max="2026" />
-        <input type="number" class="search-item" id="preco" placeholder="PREÇO MÁXIMO" min="0" step="1000" />
-        <button type="submit" class="search-btn">BUSCAR VEICULOS</button>
-      </div>
-    </form>
-  </section>
+        <!-- Veículos em Destaque -->
+        <section class="highlights">
+            <h2>MODELOS EM DESTAQUE</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://placehold.co/994x760" alt="MITSUBISHI L200" />
+                    <div class="card-content">
+                        <h3>MITSUBISHI L200</h3>
+                        <p>TRITON HPE AT9 2023/2024</p>
+                        <p class="price">R$ 145.990,00</p>
+                        <a href="html/contato.html" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/994x760" alt="FIAT TORO" />
+                    <div class="card-content">
+                        <h3>FIAT TORO</h3>
+                        <p>VOLCANO AT9 2020 / 2021</p>
+                        <p class="price">R$ 105.000,00</p>
+                        <a href="html/contato.html" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/994x760" alt="HYUNDAI CRETA" />
+                    <div class="card-content">
+                        <h3>HYUNDAI CRETA</h3>
+                        <p>CONFORT 2023/2024 1.0 TURBO</p>
+                        <p class="price">R$ 98.790,00</p>
+                        <a href="html/contato.html" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Veículos em Destaque -->
-  <section class="highlights">
-    <h2>MODELOS EM DESTAQUE</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://placehold.co/994x760" alt="MITSUBISHI L200">
-        <div class="card-content">
-          <h3>MITSUBISHI L200</h3>
-          <p>TRITON HPE AT9 2023/2024</p>
-          <p class="price">R$ 145.990,00</p>
-          <a href="contato.html" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://placehold.co/994x760" alt="FIAT TORO">
-        <div class="card-content">
-          <h3>FIAT TORO</h3>
-          <p>VOLCANO AT9 2020 / 2021</p>
-          <p class="price">R$ 105.000,00</p>
-          <a href="contato.html" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://placehold.co/994x760" alt="HYUNDAI CRETA">
-        <div class="card-content">
-          <h3>HYUNDAI CRETA</h3>
-          <p>CONFORT 2023/2024 1.0 TURBO</p>
-          <p class="price">R$ 98.790,00</p>
-          <a href="contato.html" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- Chamada para Ação -->
+        <section class="cta">
+            <h2>CHAMADA PARA AÇÃO</h2>
+            <p>Modelos exclusivos com as melhores condições do mercado</p>
+            <a href="html/inventario.html" class="cta-btn">VER MAIS</a>
+        </section>
 
-  <!-- Chamada para Ação -->
-  <section class="cta">
-    <h2>CHAMADA PARA AÇÃO</h2>
-    <p>Modelos exclusivos com as melhores condições do mercado</p>
-    <a href="inventario.html" class="cta-btn">VER MAIS</a>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="footer">
-    <div class="footer-col">
-      <img src="https://placehold.co/832x572" alt="Logo Footer" class="logo">
-    </div>
-    <div class="footer-col footer-links">
-      <h4>Páginas:</h4>
-      <ul>
-        <li><a href="/html/inicio.html">Início</a></li>
-        <li><a href="/html/inventario.html">Inventário</a></li>
-        <li><a href="/html/sobre.html">Sobre</a></li>
-        <li><a href="/html/contato.html">Contato</a></li>
-      </ul>
-    </div>
-    <div class="footer-col footer-social">
-      <h4>Redes sociais</h4>
-      <div class="social-icons">
-        <a href="#"><img src="https://placehold.co/195x195" alt="Social"></a>
-        <a href="#"><img src="https://placehold.co/163x163" alt="Social"></a>
-        <a href="#"><img src="https://placehold.co/201x201" alt="Social"></a>
-        <a href="#"><img src="https://placehold.co/219x223" alt="Social"></a>
-      </div>
-    </div>
-    <div class="copyright">
-      © 2026 PlatinumCar. Todos os direitos reservados.
-    </div>
-  </footer>
-
-  <script>
-    function buscarVeiculos(event) {
-      event.preventDefault();
-      
-      const marca = document.getElementById('marca').value;
-      const modelo = document.getElementById('modelo').value;
-      const ano = document.getElementById('ano').value;
-      const preco = document.getElementById('preco').value;
-      
-      if (!marca) {
-        alert('Por favor, selecione uma marca');
-        return;
-      }
-      
-      let filtros = `?marca=${marca}`;
-      if (modelo) filtros += `&modelo=${modelo}`;
-      if (ano) filtros += `&ano=${ano}`;
-      if (preco) filtros += `&preco=${preco}`;
-      
-      window.location.href = `inventario.html${filtros}`;
-    }
-  </script>
-
-</body>
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="footer-col">
+                <img src="https://placehold.co/832x572" alt="Logo Footer" class="logo" />
+            </div>
+            <div class="footer-col footer-links">
+                <h4>Páginas:</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="html/inventario.html">Inventário</a></li>
+                    <li><a href="html/sobre.html">Sobre</a></li>
+                    <li><a href="html/contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-social">
+                <h4>Redes sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://placehold.co/195x195" alt="Social" /></a>
+                    <a href="#"><img src="https://placehold.co/163x163" alt="Social" /></a>
+                    <a href="#"><img src="https://placehold.co/201x201" alt="Social" /></a>
+                    <a href="#"><img src="https://placehold.co/219x223" alt="Social" /></a>
+                </div>
+            </div>
+            <div class="copyright">© 2026 PlatinumCar. Todos os direitos reservados.</div>
+        </footer>
+    </body>
 </html>

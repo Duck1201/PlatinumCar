@@ -1,216 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inventário - PlatinumCar</title>
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inventário - PlatinumCar</title>
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <script src="../assets/js/main.js" defer></script>
+    </head>
+    <body>
+        <!-- Menu de Navegação -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="/images/logo.png" alt="Logo" />
+            </div>
+            <div class="nav-links">
+                <a href="../index.html">Início</a>
+                <a href="#">Inventário</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="nav-contact">
+                <span>Fale conosco</span>
+                <img src="https://placehold.co/106x106" alt="Icon" />
+            </div>
+        </nav>
 
-  <!-- Menu de Navegação -->
-  <nav class="navbar">
-    <div class="nav-logo">
-      <img src="https://placehold.co/433x297" alt="Logo">
-    </div>
-    <div class="nav-links">
-      <a href="inicio.html">Início</a>
-      <a href="inventario.html">Inventário</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-    </div>
-    <div class="nav-contact">
-      <span>Fale conosco</span>
-      <img src="https://placehold.co/106x106" alt="Icon">
-    </div>
-  </nav>
+        <!-- Layout de Grade (Grid) do Inventário com a Barra Lateral -->
+        <div class="inventory-container">
+            <!-- Barra Lateral de Filtros -->
+            <aside class="sidebar">
+                <h2>Barra Lateral</h2>
 
-  <!-- Layout de Grade (Grid) do Inventário com a Barra Lateral -->
-  <div class="inventory-container">
-    <!-- Barra Lateral de Filtros -->
-    <aside class="sidebar">
-      <h2>Barra Lateral</h2>
-      
-      <div class="filter-group">
-        <h3>Marcas</h3>
-        <label><input type="checkbox"> Marca 1</label>
-        <label><input type="checkbox"> Marca 2</label>
-        <label><input type="checkbox"> Marca 3</label>
-        <label><input type="checkbox"> Marca 4</label>
-      </div>
-      
-      <div class="filter-group">
-        <h3>Tipos</h3>
-        <label><input type="radio" name="tipo"> Marcas</label>
-        <label><input type="radio" name="tipo"> Marcas</label>
-        <label><input type="radio" name="tipo"> Marcas</label>
-        <label><input type="radio" name="tipo"> Marcas</label>
-      </div>
-      
-      <div class="filter-group">
-        <h3>Preço</h3>
-        <div class="filter-range">
-          <label>De: R$ <span id="precoMin">30000</span></label>
-          <input type="range" id="preco-min" min="0" max="500000" value="30000" step="1000">
+                <div class="filter-group">
+                    <h3>Marcas</h3>
+                    <label><input type="checkbox" /> Marca 1</label>
+                    <label><input type="checkbox" /> Marca 2</label>
+                    <label><input type="checkbox" /> Marca 3</label>
+                    <label><input type="checkbox" /> Marca 4</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Tipos</h3>
+                    <label><input type="radio" name="tipo" /> Marcas</label>
+                    <label><input type="radio" name="tipo" /> Marcas</label>
+                    <label><input type="radio" name="tipo" /> Marcas</label>
+                    <label><input type="radio" name="tipo" /> Marcas</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Preço</h3>
+                    <div class="filter-range">
+                        <label>De: R$ <span id="precoMin">30000</span></label>
+                        <input type="range" id="preco-min" min="0" max="500000" value="30000" step="1000" />
+                    </div>
+                    <div class="filter-range">
+                        <label>Até: R$ <span id="precoMax">200000</span></label>
+                        <input type="range" id="preco-max" min="0" max="500000" value="200000" step="1000" />
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Ano</h3>
+                    <div class="filter-range">
+                        <label>De: <span id="anoMin">2010</span></label>
+                        <input type="range" id="ano-min" min="1990" max="2026" value="2010" />
+                    </div>
+                    <div class="filter-range">
+                        <label>Até: <span id="anoMax">2026</span></label>
+                        <input type="range" id="ano-max" min="1990" max="2026" value="2026" />
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Grid com os Carros à venda -->
+            <main class="inventory-grid">
+                <!-- KIA SPORTAGE -->
+                <div class="card">
+                    <img src="https://placehold.co/1066x857" alt="KIA SPORTAGE" />
+                    <div class="card-content">
+                        <h3>KIA SPORTAGE</h3>
+                        <p>2.0 LX 4X2 16V FLEX 4P AUTOMÁTICO 2020</p>
+                        <p class="price">R$ 112.990,00</p>
+                        <a href="#" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+
+                <!-- VW POLO -->
+                <div class="card">
+                    <img src="https://placehold.co/1079x847" alt="VW POLO" />
+                    <div class="card-content">
+                        <h3>VW POLO</h3>
+                        <p>1.0 MPI ROCK IN RIO MANUAL 2025</p>
+                        <p class="price">R$ 79.990,00</p>
+                        <a href="#" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+
+                <!-- TOYOTA YARIS -->
+                <div class="card">
+                    <img src="https://placehold.co/1079x845" alt="TOYOTA YARIS" />
+                    <div class="card-content">
+                        <h3>TOYOTA YARIS</h3>
+                        <p>1.5 VVT-I FLEX XRE CVT 2026</p>
+                        <p class="price">R$ 163.990,00</p>
+                        <a href="#" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+
+                <!-- CHERY TIGGO -->
+                <div class="card">
+                    <img src="https://placehold.co/1079x846" alt="CHERY TIGGO" />
+                    <div class="card-content">
+                        <h3>CHERY TIGGO</h3>
+                        <p>1.5 VVT TURBO iFLEX SPORT CVT</p>
+                        <p class="price">R$ 132.990,00</p>
+                        <a href="#" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+
+                <!-- HYUNDAI HB20 -->
+                <div class="card">
+                    <img src="https://placehold.co/1072x850" alt="HYUNDAI HB20" />
+                    <div class="card-content">
+                        <h3>HYUNDAI HB20</h3>
+                        <p>1.0 CONFORT PLUS 2012/2013</p>
+                        <p class="price">R$ 39.900,00</p>
+                        <a href="#" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+
+                <!-- NISSAN KICKS -->
+                <div class="card">
+                    <img src="https://placehold.co/1079x846" alt="NISSAN KICKS" />
+                    <div class="card-content">
+                        <h3>NISSAN KICKS</h3>
+                        <p>1.6 EXCLUSIVE P.TECH INT MACCH CVT 2022</p>
+                        <p class="price">R$ 102.549,00</p>
+                        <a href="#" class="btn-detalhes">VER DETALHES</a>
+                    </div>
+                </div>
+            </main>
         </div>
-        <div class="filter-range">
-          <label>Até: R$ <span id="precoMax">200000</span></label>
-          <input type="range" id="preco-max" min="0" max="500000" value="200000" step="1000">
-        </div>
-      </div>
-      
-      <div class="filter-group">
-        <h3>Ano</h3>
-        <div class="filter-range">
-          <label>De: <span id="anoMin">2010</span></label>
-          <input type="range" id="ano-min" min="1990" max="2026" value="2010">
-        </div>
-        <div class="filter-range">
-          <label>Até: <span id="anoMax">2026</span></label>
-          <input type="range" id="ano-max" min="1990" max="2026" value="2026">
-        </div>
-      </div>
-    </aside>
 
-    <!-- Grid com os Carros à venda -->
-    <main class="inventory-grid">
-      <!-- KIA SPORTAGE -->
-      <div class="card">
-        <img src="https://placehold.co/1066x857" alt="KIA SPORTAGE">
-        <div class="card-content">
-          <h3>KIA SPORTAGE</h3>
-          <p>2.0 LX 4X2 16V FLEX 4P AUTOMÁTICO 2020</p>
-          <p class="price">R$ 112.990,00</p>
-          <a href="#" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-      
-      <!-- VW POLO -->
-      <div class="card">
-        <img src="https://placehold.co/1079x847" alt="VW POLO">
-        <div class="card-content">
-          <h3>VW POLO</h3>
-          <p>1.0 MPI ROCK IN RIO MANUAL 2025</p>
-          <p class="price">R$ 79.990,00</p>
-          <a href="#" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-      
-      <!-- TOYOTA YARIS -->
-      <div class="card">
-        <img src="https://placehold.co/1079x845" alt="TOYOTA YARIS">
-        <div class="card-content">
-          <h3>TOYOTA YARIS</h3>
-          <p>1.5 VVT-I FLEX XRE CVT 2026</p>
-          <p class="price">R$ 163.990,00</p>
-          <a href="#" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-      
-      <!-- CHERY TIGGO -->
-      <div class="card">
-        <img src="https://placehold.co/1079x846" alt="CHERY TIGGO">
-        <div class="card-content">
-          <h3>CHERY TIGGO</h3>
-          <p>1.5 VVT TURBO iFLEX SPORT CVT</p>
-          <p class="price">R$ 132.990,00</p>
-          <a href="#" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-      
-      <!-- HYUNDAI HB20 -->
-      <div class="card">
-        <img src="https://placehold.co/1072x850" alt="HYUNDAI HB20">
-        <div class="card-content">
-          <h3>HYUNDAI HB20</h3>
-          <p>1.0 CONFORT PLUS 2012/2013</p>
-          <p class="price">R$ 39.900,00</p>
-          <a href="#" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-      
-      <!-- NISSAN KICKS -->
-      <div class="card">
-        <img src="https://placehold.co/1079x846" alt="NISSAN KICKS">
-        <div class="card-content">
-          <h3>NISSAN KICKS</h3>
-          <p>1.6 EXCLUSIVE P.TECH INT MACCH CVT 2022</p>
-          <p class="price">R$ 102.549,00</p>
-          <a href="#" class="btn-detalhes">VER DETALHES</a>
-        </div>
-      </div>
-    </main>
-  </div>
-
-  <!-- Rodapé -->
-  <footer class="footer">
-    <div class="footer-col">
-      <img src="https://placehold.co/832x572" alt="Logo Footer" class="logo">
-    </div>
-    <div class="footer-col footer-links">
-      <h4>Páginas:</h4>
-      <ul>
-        <li><a href="inicio.html">Início</a></li>
-        <li><a href="inventario.html">Inventário</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </div>
-    <div class="footer-col footer-social">
-      <h4>Redes sociais</h4>
-      <div class="social-icons">
-        <a href="#"><img src="https://placehold.co/195x195" alt="Social"></a>
-        <a href="#"><img src="https://placehold.co/163x163" alt="Social"></a>
-        <a href="#"><img src="https://placehold.co/201x201" alt="Social"></a>
-        <a href="#"><img src="https://placehold.co/219x223" alt="Social"></a>
-      </div>
-    </div>
-    <div class="copyright">
-      © 2026 PlatinumCar. Todos os direitos reservados.
-    </div>
-  </footer>
-
-  <script>
-    // Atualizar Preço
-    const precoMin = document.getElementById('preco-min');
-    const precoMax = document.getElementById('preco-max');
-    const precoMinDisplay = document.getElementById('precoMin');
-    const precoMaxDisplay = document.getElementById('precoMax');
-
-    precoMin.addEventListener('input', () => {
-      if (parseInt(precoMin.value) > parseInt(precoMax.value)) {
-        precoMin.value = precoMax.value;
-      }
-      precoMinDisplay.textContent = parseInt(precoMin.value).toLocaleString('pt-BR');
-    });
-
-    precoMax.addEventListener('input', () => {
-      if (parseInt(precoMax.value) < parseInt(precoMin.value)) {
-        precoMax.value = precoMin.value;
-      }
-      precoMaxDisplay.textContent = parseInt(precoMax.value).toLocaleString('pt-BR');
-    });
-
-    // Atualizar Ano
-    const anoMin = document.getElementById('ano-min');
-    const anoMax = document.getElementById('ano-max');
-    const anoMinDisplay = document.getElementById('anoMin');
-    const anoMaxDisplay = document.getElementById('anoMax');
-
-    anoMin.addEventListener('input', () => {
-      if (parseInt(anoMin.value) > parseInt(anoMax.value)) {
-        anoMin.value = anoMax.value;
-      }
-      anoMinDisplay.textContent = anoMin.value;
-    });
-
-    anoMax.addEventListener('input', () => {
-      if (parseInt(anoMax.value) < parseInt(anoMin.value)) {
-        anoMax.value = anoMin.value;
-      }
-      anoMaxDisplay.textContent = anoMax.value;
-    });
-  </script>
-
-</body>
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="footer-col">
+                <img src="https://placehold.co/832x572" alt="Logo Footer" class="logo" />
+            </div>
+            <div class="footer-col footer-links">
+                <h4>Páginas:</h4>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="#">Inventário</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-social">
+                <h4>Redes sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://placehold.co/195x195" alt="Social" /></a>
+                    <a href="#"><img src="https://placehold.co/163x163" alt="Social" /></a>
+                    <a href="#"><img src="https://placehold.co/201x201" alt="Social" /></a>
+                    <a href="#"><img src="https://placehold.co/219x223" alt="Social" /></a>
+                </div>
+            </div>
+            <div class="copyright">© 2026 PlatinumCar. Todos os direitos reservados.</div>
+        </footer>
+    </body>
 </html>
