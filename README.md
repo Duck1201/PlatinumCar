@@ -49,6 +49,6 @@ Criar uma solução digital para o segmento automotivo premium, oferecendo uma e
 
 ## Acesse
 
-Site: https://duck1201.github.io/PlatinumCar/
+Site: https://duck1201.github.io/PlatinumCar/html/inicio.html
 
 Figma: https://www.figma.com/proto/VBbw6SnGFa9fBw6TEPx6hl/PlatinumCar?node-id=399-66&t=EOReGUUda5185aWX-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=399%3A66
