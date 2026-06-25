@@ -4,30 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sobre - PlatinumCar</title>
-        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../assets/main.js" defer></script>
     </head>
     <body>
         <!-- Menu de Navegação -->
         <nav class="navbar">
-            <div class="nav-logo">
-                <img src="../images/logo.png" alt="Logo" />
-            </div>
+            <a href="inicio.html" class="nav-logo-link">
+                <div class="nav-logo">
+                    <img src="../img/logo.png" alt="PlatinumCar Logo" />
+                </div>
+            </a>
             <div class="nav-links">
-                <a href="../index.html">Início</a>
+                <a href="inicio.html">Início</a>
                 <a href="inventario.html">Inventário</a>
                 <a href="#">Sobre</a>
                 <a href="contato.html">Contato</a>
             </div>
             <div class="nav-contact">
-                <span>Fale conosco</span>
-                <img src="https://placehold.co/106x106" alt="Icon" />
+                <a href="https://www.whatsapp.com/" target="_blank" title="WhatsApp" class="whatsapp-link">
+                    <span>Fale conosco</span>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </nav>
 
         <main>
             <!-- Hero Banner -->
             <section class="sobre-hero">
-                <img src="https://placehold.co/3602x1796" alt="Banner PlatinumCar" />
+                <img src="../img/02.png" alt="Banner PlatinumCar" />
             </section>
 
             <!-- História e Propósito -->
@@ -45,15 +51,15 @@
             <!-- Nossos Valores -->
             <section class="sobre-values-section">
                 <div class="value-item">
-                    <img src="https://placehold.co/450x450" alt="Qualidade" />
+                    <i class="fas fa-star value-icon"></i>
                     <h3>Qualidade</h3>
                 </div>
                 <div class="value-item">
-                    <img src="https://placehold.co/450x450" alt="Transparência" />
+                    <i class="fas fa-handshake value-icon"></i>
                     <h3>Transparência</h3>
                 </div>
                 <div class="value-item">
-                    <img src="https://placehold.co/450x450" alt="Parceria" />
+                    <i class="fas fa-link value-icon"></i>
                     <h3>Parceria</h3>
                 </div>
             </section>
@@ -62,12 +68,13 @@
         <!-- Rodapé -->
         <footer class="footer">
             <div class="footer-col">
-                <img src="https://placehold.co/832x572" alt="Logo Footer" class="logo" />
+                <img src="../img/logo.png" alt="PlatinumCar Logo Footer" class="logo" />
+                <div class="copyright">© 2026 PlatinumCar. Todos os direitos reservados.</div>
             </div>
             <div class="footer-col footer-links">
-                <h4>Páginas:</h4>
+                <h4>Páginas</h4>
                 <ul>
-                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="inicio.html">Início</a></li>
                     <li><a href="inventario.html">Inventário</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -76,13 +83,12 @@
             <div class="footer-col footer-social">
                 <h4>Redes sociais</h4>
                 <div class="social-icons">
-                    <a href="#"><img src="https://placehold.co/195x195" alt="Social" /></a>
-                    <a href="#"><img src="https://placehold.co/163x163" alt="Social" /></a>
-                    <a href="#"><img src="https://placehold.co/201x201" alt="Social" /></a>
-                    <a href="#"><img src="https://placehold.co/219x223" alt="Social" /></a>
+                    <a href="https://google.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://google.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://google.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://google.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="copyright">© 2026 PlatinumCar. Todos os direitos reservados.</div>
         </footer>
     </body>
 </html>

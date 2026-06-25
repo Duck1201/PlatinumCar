@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Configuração obrigatória para que o site funcione direito em celulares -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Detalhes do Veículo - PlatinumCar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../assets/main.js" defer></script>
+    </head>
+    <body>
+        <!-- Menu de Navegação -->
+        <nav class="navbar">
+            <a href="inicio.html" class="nav-logo-link">
+                <div class="nav-logo">
+                    <img src="../img/logo.png" alt="PlatinumCar Logo" />
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="inicio.html">Início</a>
+                <a href="inventario.html">Inventário</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="nav-contact">
+                <a href="https://www.whatsapp.com/" target="_blank" title="WhatsApp" class="whatsapp-link">
+                    <span>Fale conosco</span>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Seção Principal com Detalhes do Veículo -->
+        <main class="detalhes-container">
+            <!-- Lado Esquerdo: Carrossel Dinâmico de Fotos -->
+            <div class="detalhes-imagem">
+                <!-- Contêiner grande da Imagem em Foco -->
+                <div class="main-image">
+                    <img src="../img/l200.jpeg" id="imagemPrincipal" alt="MITSUBISHI L200" />
+                </div>
+                <!-- Menu de Miniaturas: Quando clicado, injeta a imagem selecionada no contêiner grande acima via JS -->
+                <div class="thumbnail-gallery">
+                    <img src="../img/l200.jpeg" class="active" onclick="trocarImagem(this)" alt="MITSUBISHI L200 - Principal" />
+                    <img src="../img/l200 2.jpeg" onclick="trocarImagem(this)" alt="MITSUBISHI L200 - Interior" />
+                    <img src="../img/l200 3.jpeg" onclick="trocarImagem(this)" alt="MITSUBISHI L200 - Painel" />
+                    <img src="../img/l200 4.jpeg" onclick="trocarImagem(this)" alt="MITSUBISHI L200 - Traseira" />
+                    <img src="../img/l200 5.png" onclick="trocarImagem(this)" alt="MITSUBISHI L200 - Motor" />
+                </div>
+            </div>
+
+            <!-- Lado Direito: Informações Textuais e Descritivas -->
+            <div class="detalhes-info">
+                <h1>MITSUBISHI L200</h1>
+                <h2>TRITON 3.2 GL 4X4 CD 16V TURBO INTERCOLER DIESEL 4P MANUAL2014 / 2015</h2>
+                <p class="preco">R$ 94.990,00</p>
+
+                <!-- Ficha técnica organizada em bloquinhos usando Grid -->
+                <div class="specs">
+                    <div class="spec-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Ano: 23/24</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>15.000 km</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Diesel</span>
+                    </div>
+                    <div class="spec-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Automático</span>
+                    </div>
+                </div>
+
+                <h3>Descrição</h3>
+                <p>Veículo em excelente estado de conservação, revisões em dia na concessionária. Possui manual e chave reserva. Camionete robusta, ideal para trabalho ou aventuras off-road, garantindo máximo conforto e segurança.</p>
+
+                <!-- Call to Action que leva o usuário para a página de contato -->
+                <a href="contato.html" class="btn-comprar">TENHO INTERESSE</a>
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="footer-col">
+                <img src="../img/logo.png" alt="PlatinumCar Logo Footer" class="logo" />
+                <div class="copyright">© 2026 PlatinumCar. Todos os direitos reservados.</div>
+            </div>
+            <div class="footer-col footer-links">
+                <h4>Páginas</h4>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="inventario.html">Inventário</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-social">
+                <h4>Redes sociais</h4>
+                <div class="social-icons">
+                    <a href="https://google.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://google.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://google.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://google.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

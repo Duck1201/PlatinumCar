@@ -4,30 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contato - PlatinumCar</title>
-        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../assets/main.js" defer></script>
     </head>
     <body>
         <!-- Menu de Navegação -->
         <nav class="navbar">
-            <div class="nav-logo">
-                <img src="../images/logo.png" alt="Logo" />
-            </div>
+            <a href="inicio.html" class="nav-logo-link">
+                <div class="nav-logo">
+                    <img src="../img/logo.png" alt="PlatinumCar Logo" />
+                </div>
+            </a>
             <div class="nav-links">
-                <a href="../index.html">Início</a>
+                <a href="inicio.html">Início</a>
                 <a href="inventario.html">Inventário</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="#">Contato</a>
             </div>
             <div class="nav-contact">
-                <span>Fale conosco</span>
-                <img src="https://placehold.co/106x106" alt="Icon" />
+                <a href="https://www.whatsapp.com/" target="_blank" title="WhatsApp" class="whatsapp-link">
+                    <span>Fale conosco</span>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </nav>
 
         <main>
             <!-- Hero Banner do Contato -->
             <section class="contato-hero">
-                <img src="https://placehold.co/3590x2321" alt="Contato PlatinumCar" />
+                <img src="../img/03.png" alt="Contato PlatinumCar" />
             </section>
 
             <!-- Seção Principal de Contato -->
@@ -40,23 +46,23 @@
                         <h2>Informações de Contato</h2>
 
                         <div class="info-item">
-                            <h3>Telefone</h3>
-                            <p>(31) 3892-2211<br />(31) 98404-2586</p>
+                            <h3><i class="fas fa-phone-alt"></i> Telefone</h3>
+                            <p>(31) 3892-2211<br />(32) 9928-2412</p>
                         </div>
 
                         <div class="info-item">
-                            <h3>Endereço</h3>
+                            <h3><i class="fas fa-map-marker-alt"></i> Endereço</h3>
                             <p>Avenida Governador Ozanan Coelho, 788<br />Santo Antônio - Viçosa/MG</p>
                         </div>
 
                         <div class="info-item">
-                            <h3>Horário</h3>
+                            <h3><i class="fas fa-clock"></i> Horário</h3>
                             <p>07:00 as 17:00</p>
                         </div>
 
                         <!-- Caixa com o mapa/ícone -->
                         <div class="map-box">
-                            <img src="https://placehold.co/221x221" alt="Localização" />
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.238627807218!2d-42.880997184497645!3d-20.75132548615364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa35ce30d9bc7b9%3A0xc34857b2ff9de5a3!2sAv.%20Gov.%20Ozanam%20Coelho%2C%20788%20-%20Santo%20Ant%C3%B4nio%2C%20Vi%C3%A7osa%20-%20MG%2C%2036570-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" height="250" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
@@ -67,7 +73,7 @@
                             <input type="text" placeholder="Nome Completo" required />
                             <input type="email" placeholder="E-mail" required />
                             <input type="tel" placeholder="Telefone / Whatsapp" required />
-                            <textarea placeholder="Sua Mensagem..." required></textarea>
+                            <textarea placeholder="Sua Mensagem..." rows="8" required></textarea>
                             <button type="submit">Enviar Mensagem</button>
                         </form>
                     </div>
@@ -78,12 +84,13 @@
         <!-- Rodapé -->
         <footer class="footer">
             <div class="footer-col">
-                <img src="https://placehold.co/832x572" alt="Logo Footer" class="logo" />
+                <img src="../img/logo.png" alt="PlatinumCar Logo Footer" class="logo" />
+                <div class="copyright">© 2026 PlatinumCar. Todos os direitos reservados.</div>
             </div>
             <div class="footer-col footer-links">
-                <h4>Páginas:</h4>
+                <h4>Páginas</h4>
                 <ul>
-                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="inicio.html">Início</a></li>
                     <li><a href="inventario.html">Inventário</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="#">Contato</a></li>
@@ -92,13 +99,12 @@
             <div class="footer-col footer-social">
                 <h4>Redes sociais</h4>
                 <div class="social-icons">
-                    <a href="#"><img src="https://placehold.co/195x195" alt="Social" /></a>
-                    <a href="#"><img src="https://placehold.co/163x163" alt="Social" /></a>
-                    <a href="#"><img src="https://placehold.co/201x201" alt="Social" /></a>
-                    <a href="#"><img src="https://placehold.co/219x223" alt="Social" /></a>
+                    <a href="https://google.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://google.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://google.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://google.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="copyright">© 2026 PlatinumCar. Todos os direitos reservados.</div>
         </footer>
     </body>
 </html>
