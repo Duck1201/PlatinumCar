@@ -3,44 +3,45 @@ O PlatinumCar é uma plataforma digital desenvolvida para apresentação e divul
 
 ## Design e Prototipação
 
-Toda a estrutura visual da aplicação foi planejada e desenvolvida utilizando o Figma, ferramenta utilizada para criação dos protótipos de baixa e alta fidelidade. Durante o processo de design foram definidos:
+Toda a estrutura visual da aplicação foi planejada e desenvolvida utilizando o Figma, ferramenta utilizada para criação dos protótipos de baixa e alta fidelidade. Durante o processo de design foram
+definidos:
 
-• Identidade visual da plataforma;
-• Organização das telas;
-• Fluxo de navegação;
-• Componentes da interface;
-• Tipografia e elementos visuais;
-• Experiência de navegação do usuário.
+• Identidade visual da plataforma;</br>
+• Organização das telas;</br>
+• Fluxo de navegação;</br>
+• Componentes da interface;</br>
+• Tipografia e elementos visuais;</br>
+• Experiência de navegação do usuário.</br>
 
-O protótipo passou por uma evolução desde a estrutura inicial até uma interface de alta fidelidade, aproximando o projeto da versão final desenvolvida.
+O protótipo passou por uma evolução desde a estrutura inicial até uma interface de alta fidelidade, aproximando o projeto da versão final desenvolvida.</br>
 
 ## Funcionalidades
 
-• Visualização de veículos disponíveis;
-• Apresentação de informações detalhadas dos automóveis;
-• Navegação organizada entre as páginas;
-• Interface focada em usabilidade;
-• Canal de contato para demonstração de interesse.
+• Visualização de veículos disponíveis;</br>
+• Apresentação de informações detalhadas dos automóveis;</br>
+• Navegação organizada entre as páginas;</br>
+• Interface focada em usabilidade;</br>
+• Canal de contato para demonstração de interesse.</br>
 
 ## Fluxo Principal do Sistema
 
-Página Inicial → Lista de Veículos → Detalhes do Veículo → Contato
+Página Inicial → Lista de Veículos → Detalhes do Veículo → Contato</br>
 
 ## Tecnologias e Ferramentas
 
-• Figma — Prototipação e Design UX/UI;
-• HTML, CSS e JavaScript — Desenvolvimento da interface;
-• Git e GitHub — Versionamento e gerenciamento do código.
+• Figma — Prototipação e Design UX/UI;</br>
+• HTML, CSS e JavaScript — Desenvolvimento da interface;</br>
+• Git e GitHub — Versionamento e gerenciamento do código.</br>
 
 ## Desenvolvimento em Equipe
 
-O projeto foi desenvolvido seguindo uma organização baseada em divisão de responsabilidades, envolvendo áreas como:
+O projeto foi desenvolvido seguindo uma organização baseada em divisão de responsabilidades, envolvendo áreas como:</br>
 
-• Desenvolvimento Front-end;
-• Design UX/UI;
-• Análise de requisitos;
-• Documentação;
-• Gerenciamento do projeto.
+• Desenvolvimento Front-end;</br>
+• Design UX/UI;</br>
+• Análise de requisitos;</br>
+• Documentação;</br>
+• Gerenciamento do projeto.</br>
 
 ## Objetivo
 
